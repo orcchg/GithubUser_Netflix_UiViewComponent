@@ -1,4 +1,4 @@
-package com.orcchg.githubuser.featurebase;
+package com.orcchg.githubuser.origin;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.orcchg.githubuser.featurebase
+package com.orcchg.githubuser.origin
 
 import android.app.Application
 

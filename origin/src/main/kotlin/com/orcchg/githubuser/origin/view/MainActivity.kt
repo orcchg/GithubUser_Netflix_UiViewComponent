@@ -1,4 +1,4 @@
-package com.orcchg.githubuser.featurebase.view
+package com.orcchg.githubuser.origin.view
 
 import androidx.appcompat.app.AppCompatActivity
 
