@@ -1,1 +1,1 @@
-include ':base', ':domain', ':data', ':widget', ':utility'
+include ':base', ':domain', ':data', ':widget', ':utility', ':featurebase', ':instantapp', ':app'
