@@ -28,7 +28,7 @@ buildscript {
         overscrollVersion = '1.0.4'
         rvAnimVersion = '3.0.0'
 
-        logInterceptorVersion = '2.0.4'
+        logInterceptorVersion = '3.0.0'
         okHttpVersion = '3.10.0'
         retrofitVersion = '2.4.0'
 
