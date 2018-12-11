@@ -11,5 +11,5 @@ interface GithubRestAdapter {
     fun users(): Single<List<User>>
 
     @GET("users/{login}")
-    fun user(@Path("login") login: String)
+    fun user(@Path("login") login: String): Single<User>
 }
