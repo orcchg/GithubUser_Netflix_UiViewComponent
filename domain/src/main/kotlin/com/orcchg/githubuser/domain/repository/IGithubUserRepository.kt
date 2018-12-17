@@ -1,11 +1,11 @@
 package com.orcchg.githubuser.domain.repository
 
 import com.orcchg.githubuser.domain.model.GithubUser
-import io.reactivex.Single
+import io.reactivex.Observable
 
 interface IGithubUserRepository {
 
-    fun users(): Single<List<GithubUser>>
+    fun users(): Observable<List<GithubUser>>
 
-    fun user(login: String): Single<GithubUser>
+    fun user(login: String): Observable<GithubUser>
 }
