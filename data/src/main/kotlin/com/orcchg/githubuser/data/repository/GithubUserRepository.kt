@@ -1,12 +1,13 @@
 package com.orcchg.githubuser.data.repository
 
+import com.orcchg.githubuser.data.local.GithubUserDao
 import com.orcchg.githubuser.data.remote.GithubCloud
 import com.orcchg.githubuser.domain.model.GithubUser
 import io.reactivex.Single
 
-class GithubUserRepository(private val cloud: GithubCloud) {
+class GithubUserRepository(private val cloud: GithubCloud, private val local: GithubUserDao) : IGithubUserRepository {
 
-    fun users(): Single<List<GithubUser>> = cloud.users()
+    override fun users(): Single<List<GithubUser>> = cloud.users()
 
-    fun user(login: String): Single<GithubUser> = cloud.user(login)
+    override fun user(login: String): Single<GithubUser> = cloud.user(login)
 }
