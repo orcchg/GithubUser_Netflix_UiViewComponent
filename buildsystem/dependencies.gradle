@@ -287,7 +287,7 @@ ext {
     domainDependencies = [
             [configuration: "implementation", dependency: d_libs.gson],
     ]
-    domainDependencies += module_utility + kotlin + log + room
+    domainDependencies += module_utility + kotlin + log + room + rx
     testDomainDependencies = test
 
     domainPlugins = [

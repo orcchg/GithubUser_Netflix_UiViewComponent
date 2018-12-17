@@ -1,4 +1,4 @@
-package com.orcchg.githubuser.data.repository
+package com.orcchg.githubuser.domain.repository
 
 import com.orcchg.githubuser.domain.model.GithubUser
 import io.reactivex.Single
