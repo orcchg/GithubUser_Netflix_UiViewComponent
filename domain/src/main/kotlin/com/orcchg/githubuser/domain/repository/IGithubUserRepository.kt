@@ -5,7 +5,7 @@ import io.reactivex.Observable
 
 interface IGithubUserRepository {
 
-    fun users(): Observable<List<GithubUser>>
+    fun users(errorCallback: ErrorCallback? = null): Observable<List<GithubUser>>
 
-    fun user(login: String): Observable<GithubUser>
+    fun user(login: String, errorCallback: ErrorCallback? = null): Observable<GithubUser>
 }
